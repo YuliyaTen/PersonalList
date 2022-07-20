@@ -14,6 +14,7 @@
 		DA8E551328885E7700990C8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8E551128885E7700990C8F /* LaunchScreen.storyboard */; };
 		DA8E551B28885FBD00990C8F /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E551A28885FBD00990C8F /* PersonsListViewController.swift */; };
 		DA8E551F288865F400990C8F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E551E288865F400990C8F /* Person.swift */; };
+		DA8E55212888995E00990C8F /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E55202888995E00990C8F /* PersonDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DA8E551428885E7700990C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8E551A28885FBD00990C8F /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
 		DA8E551E288865F400990C8F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DA8E55202888995E00990C8F /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				DA8E550628885E7500990C8F /* AppDelegate.swift */,
 				DA8E550828885E7500990C8F /* SceneDelegate.swift */,
 				DA8E550C28885E7500990C8F /* Main.storyboard */,
+				DA8E55202888995E00990C8F /* PersonDetailsViewController.swift */,
 				DA8E551A28885FBD00990C8F /* PersonsListViewController.swift */,
 				DA8E551E288865F400990C8F /* Person.swift */,
 				DA8E550F28885E7700990C8F /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8E55212888995E00990C8F /* PersonDetailsViewController.swift in Sources */,
 				DA8E550728885E7500990C8F /* AppDelegate.swift in Sources */,
 				DA8E551B28885FBD00990C8F /* PersonsListViewController.swift in Sources */,
 				DA8E551F288865F400990C8F /* Person.swift in Sources */,

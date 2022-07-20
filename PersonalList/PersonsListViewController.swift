@@ -12,6 +12,7 @@ class PersonsListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 80
 
     }
 
@@ -27,25 +28,19 @@ class PersonsListViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         content.text = list.fullName
         content.image = UIImage(named: list.title)
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
         return cell
     }
     
     // MARK: - UITableViewDelegate
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        80
-    }
-    
-
-
-   
-   
+  
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        guard let detailsVC = segue.destination as? PersonDetailsViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        detailsVC.person = personsList[indexPath.row]
     }
-
-
 }

@@ -3,11 +3,12 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Persons List-->
+        <!--My Friends-->
         <scene sceneID="Y66-JB-Tbn">
             <objects>
                 <tableViewController id="7et-FQ-8bt" customClass="PersonsListViewController" customModule="PersonalList" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,6 +33,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="9wQ-Jr-OhO" kind="show" id="VgH-4O-wv0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -39,11 +43,54 @@
                             <outlet property="delegate" destination="7et-FQ-8bt" id="o8J-Rl-N70"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Persons List" id="6aC-vd-cRI"/>
+                    <navigationItem key="navigationItem" title="My Friends" id="6aC-vd-cRI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OvF-MP-7fF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="140"/>
+            <point key="canvasLocation" x="451" y="140"/>
+        </scene>
+        <!--Person Details-->
+        <scene sceneID="GUt-ei-Awb">
+            <objects>
+                <viewController id="9wQ-Jr-OhO" customClass="PersonDetailsViewController" customModule="PersonalList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GSB-70-fMi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="lO8-pX-4IT">
+                                <rect key="frame" x="20" y="180" width="41.5" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vH-Oa-eXz">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEw-M6-erE">
+                                        <rect key="frame" x="0.0" y="70.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Aqj-iB-LUk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lO8-pX-4IT" firstAttribute="leading" secondItem="Aqj-iB-LUk" secondAttribute="leading" constant="20" id="mGk-V1-fqb"/>
+                            <constraint firstItem="lO8-pX-4IT" firstAttribute="top" secondItem="Aqj-iB-LUk" secondAttribute="top" constant="40" id="zDy-1G-Bcb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Person Details" id="ayW-hS-c5m"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="uEw-M6-erE" id="1AR-FX-DIh"/>
+                        <outlet property="phoneLabel" destination="4vH-Oa-eXz" id="4vr-at-nXY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzE-QW-Sgo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1282.608695652174" y="139.95535714285714"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Au5-RE-qaR">
