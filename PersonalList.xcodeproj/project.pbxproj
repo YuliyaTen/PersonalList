@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		DA8E550728885E7500990C8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E550628885E7500990C8F /* AppDelegate.swift */; };
 		DA8E550928885E7500990C8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E550828885E7500990C8F /* SceneDelegate.swift */; };
-		DA8E550B28885E7500990C8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E550A28885E7500990C8F /* ViewController.swift */; };
 		DA8E550E28885E7500990C8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8E550C28885E7500990C8F /* Main.storyboard */; };
 		DA8E551028885E7700990C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8E550F28885E7700990C8F /* Assets.xcassets */; };
 		DA8E551328885E7700990C8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8E551128885E7700990C8F /* LaunchScreen.storyboard */; };
+		DA8E551B28885FBD00990C8F /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E551A28885FBD00990C8F /* PersonsListViewController.swift */; };
+		DA8E551F288865F400990C8F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E551E288865F400990C8F /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA8E550328885E7500990C8F /* PersonalList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8E550628885E7500990C8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8E550828885E7500990C8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA8E550A28885E7500990C8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA8E550D28885E7500990C8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA8E550F28885E7700990C8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8E551228885E7700990C8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA8E551428885E7700990C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8E551A28885FBD00990C8F /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
+		DA8E551E288865F400990C8F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				DA8E550628885E7500990C8F /* AppDelegate.swift */,
 				DA8E550828885E7500990C8F /* SceneDelegate.swift */,
-				DA8E550A28885E7500990C8F /* ViewController.swift */,
 				DA8E550C28885E7500990C8F /* Main.storyboard */,
+				DA8E551A28885FBD00990C8F /* PersonsListViewController.swift */,
+				DA8E551E288865F400990C8F /* Person.swift */,
 				DA8E550F28885E7700990C8F /* Assets.xcassets */,
 				DA8E551128885E7700990C8F /* LaunchScreen.storyboard */,
 				DA8E551428885E7700990C8F /* Info.plist */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8E550B28885E7500990C8F /* ViewController.swift in Sources */,
 				DA8E550728885E7500990C8F /* AppDelegate.swift in Sources */,
+				DA8E551B28885FBD00990C8F /* PersonsListViewController.swift in Sources */,
+				DA8E551F288865F400990C8F /* Person.swift in Sources */,
 				DA8E550928885E7500990C8F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +308,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +336,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
